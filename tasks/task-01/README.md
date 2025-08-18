@@ -16,7 +16,8 @@ In this implementation:
 ---
 
 ## 📂 Project Structure
-tasks/task_01/
+```
+tasks/task-01/
 ├── README.md
 ├── requirements.txt
 ├── src/
@@ -28,9 +29,9 @@ tasks/task_01/
 ├── tests/
 │ └── test_chatbot.py
 ├── data/
-│ └── (optional patterns.json later)
-└── notebooks/
-└── (optional demo notebook later)
+│ └── patterns.json # (optional later)
+└── notebooks/ # (optional demo notebook later)
+```
 
 
 ## ⚙️ Setup Instructions
@@ -93,9 +94,9 @@ Expected output:
 ✨ Adding New Rules
 You can extend the chatbot by adding new intents.
 
-Open src/rules.py
+1.Open src/rules.py
 
-Add a new Rule object:
+2.Add a new Rule object:
 
 ```python
 
@@ -107,8 +108,9 @@ Rule(
 )
 ```
 
-Save and re-run the chatbot:
+3.Save and re-run the chatbot:
 ```
 you> weather
 bot> I can't fetch live weather, but it's always sunny in code ☀️
 ```
+
