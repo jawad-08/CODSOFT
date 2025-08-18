@@ -32,34 +32,27 @@ tasks/task_01/
 └── notebooks/
 └── (optional demo notebook later)
 
-yaml
-Copy
-Edit
-
----
 
 ## ⚙️ Setup Instructions
 
 1. **Create and activate a virtual environment**
    ```bash
    python -m venv .venv
+   
 Windows (PowerShell)
 
-powershell
-Copy
-Edit
+```bash
 .\.venv\Scripts\Activate.ps1
+```
 macOS/Linux
-
-bash
-Copy
-Edit
+```bash
 source .venv/bin/activate
+```
+
 Install dependencies
 
 bash
-Copy
-Edit
+
 pip install -r tasks/task_01/requirements.txt
 ▶️ Running the Chatbot
 From the repo root:
