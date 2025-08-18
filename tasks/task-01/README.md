@@ -32,6 +32,11 @@ tasks/task_01/
 └── notebooks/
 └── (optional demo notebook later)
 
+yaml
+Copy
+Edit
+
+---
 
 ## ⚙️ Setup Instructions
 
@@ -39,20 +44,35 @@ tasks/task_01/
    ```bash
    python -m venv .venv
 Windows (PowerShell)
+
+powershell
+Copy
+Edit
 .\.venv\Scripts\Activate.ps1
-
 macOS/Linux
+
+bash
+Copy
+Edit
 source .venv/bin/activate
-
 Install dependencies
+
+bash
+Copy
+Edit
 pip install -r tasks/task_01/requirements.txt
-
-
 ▶️ Running the Chatbot
 From the repo root:
+
+bash
+Copy
+Edit
 python -m tasks.task_01.src.cli
 Example Run
 
+pgsql
+Copy
+Edit
 Rule Bot 🤖 — type 'help' for ideas, 'exit' to quit.
 you> hello
 bot> Hello! What would you like to know?  (intent=greet, conf=0.67)
@@ -67,23 +87,37 @@ To quit: type exit or press Ctrl+C.
 🧪 Running Tests
 This project includes simple unit tests to verify responses.
 
+bash
+Copy
+Edit
 python -m pytest tasks/task_01/tests/ -q
 Expected output:
+
+python-repl
+Copy
+Edit
 ...                                                                 [100%]
 3 passed in 0.15s
-
 ✨ Adding New Rules
 You can extend the chatbot by adding new intents.
 
 Open src/rules.py
+
 Add a new Rule object:
+
+python
+Copy
+Edit
 Rule(
     intent="weather",
     patterns=[r"\b(weather|forecast)\b"],
     responses=["I can't fetch live weather, but it's always sunny in code ☀️"],
     priority=1,
 )
-
 Save and re-run the chatbot:
+
+shell
+Copy
+Edit
 you> weather
 bot> I can't fetch live weather, but it's always sunny in code ☀️
